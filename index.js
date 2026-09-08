@@ -3,7 +3,7 @@ const app = express();
 
 app.get('/', (req, res) => res.send('Hello CI/CD'));
 
-if (require.main === module) {
+if (require.main   === module) {
   app.listen(3000, () => console.log('Server running on port 3000'));
 }
 
